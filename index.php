@@ -110,9 +110,11 @@
     }
     $(() => {
         loadPosts();
+        $("#detail").hide();
         $("#btnBack").click(() => {
             location.reload();
             $("#btnBack").hide();
+            $("#detail").hide();
         });
     });
 </script>
